@@ -1,0 +1,42 @@
+##ReadData.txt --- 
+## 
+## Description: 填卡式读取--数据。
+## Author: Hongyi Wu(吴鸿毅)
+## Email: wuhongyi@qq.com 
+## Created: 五 4月 18 18:16:22 2014 (+0800)
+## Last-Updated: 日 5月  7 09:43:29 2017 (+0800)
+##           By: Hongyi Wu(吴鸿毅)
+##     Update #: 93
+## URL: http://wuhongyi.cn 
+
+RunBeamOn  1000000            #执行程序不带参数时该参数生效，用于脚本批量执行
+
+EnableRandSeed 1      # >0 set random seed as time
+
+
+FileName wuData
+
+
+
+
+
+
+
+
+
+##=============Physics====================
+
+ParticleRangeCut 0.7   #mm
+lowLimit -1.     #eV,It will take effect on lowLimit>=0.0 && highLimit>=0.0
+highLimit -0.5    #GeV,It will take effect on lowLimit>=0.0 && highLimit>=0.0 
+TrackingLimitParticle 0 opticalphoton
+
+##Thermal Neutron
+Thermal 0  # 1：调用0-4eV热中子弹散模型，0：不调用0-4eV热中子弹散模型
+
+
+
+
+
+
+######################################################################
